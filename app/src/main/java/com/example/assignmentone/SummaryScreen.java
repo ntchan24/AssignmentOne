@@ -116,12 +116,12 @@ public class SummaryScreen extends AppCompatActivity {
         AngryText.setText(count4freq);
 
         //excited text
-        String count5freq = ("Happy" + count5+"/"+ TotalCount);
+        String count5freq = ("Excited" + count5+"/"+ TotalCount);
         TextView ExcitedText = findViewById(R.id.excitedtext);
         ExcitedText.setText(count5freq);
 
         //disappointed text
-        String count6freq = ("Happy" + count6+"/"+ TotalCount);
+        String count6freq = ("Disappointed" + count6+"/"+ TotalCount);
         TextView DisappointedText = findViewById(R.id.disappointedtext);
         DisappointedText.setText(count6freq);
 

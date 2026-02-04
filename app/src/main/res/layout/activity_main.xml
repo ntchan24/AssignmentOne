@@ -20,7 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4">
 
-        <!-- Row 1, Column 1: Happy -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -42,7 +41,6 @@
                 android:text="@string/happy" />
         </LinearLayout>
 
-        <!-- Row 1, Column 2: Sad -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -64,7 +62,6 @@
                 android:text="@string/sad" />
         </LinearLayout>
 
-        <!-- Row 1, Column 3: Grateful -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -86,7 +83,6 @@
                 android:text="@string/grateful" />
         </LinearLayout>
 
-        <!-- Row 2, Column 1: Angry -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -108,7 +104,6 @@
                 android:text="@string/angry" />
         </LinearLayout>
 
-        <!-- Row 2, Column 2: Excited -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -130,7 +125,6 @@
                 android:text="@string/excited" />
         </LinearLayout>
 
-        <!-- Row 2, Column 3: Disappointed -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
