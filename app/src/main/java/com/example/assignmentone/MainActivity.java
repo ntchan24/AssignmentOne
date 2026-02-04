@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private int Count4 = 0;
     private int Count5 = 0;
     private int Count6 = 0;
+    private int TotalCount = 0;
 
 
 
@@ -46,14 +47,53 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button HappyButton = findViewById(R.id.button); //find the button by id
-        TextView Counter1 = findViewById(R.id.counter1); //find the counter1 by id
+        Counter1 = findViewById(R.id.counter1); //find the counter1 by id
 
         HappyButton.setOnClickListener(v -> {
             Count1++;
-            Counter1.setText(Count1);
-            System.out.println("the button is pressed");
+            Counter1.setText(String.valueOf(Count1));
 
 
+        });
+
+        Button SadButton = findViewById(R.id.button2); //find the button by id
+        Counter2 = findViewById(R.id.counter2); //find the counter1 by id
+
+        SadButton.setOnClickListener(v -> {
+            Count2++;
+            Counter2.setText(String.valueOf(Count2));
+        });
+
+        Button GratefulButton = findViewById(R.id.button3); //find the button by id
+        Counter3 = findViewById(R.id.counter3); //find the counter1 by id
+
+        GratefulButton.setOnClickListener(v -> {
+            Count3++;
+            Counter3.setText(String.valueOf(Count3));
+        });
+
+        Button AngryButton = findViewById(R.id.button4); //find the button by id
+        Counter4 = findViewById(R.id.counter4); //find the counter1 by id
+
+        AngryButton.setOnClickListener(v -> {
+            Count4++;
+            Counter4.setText(String.valueOf(Count4));
+        });
+
+        Button ExcitedButton = findViewById(R.id.button5); //find the button by id
+        Counter5 = findViewById(R.id.counter5); //find the counter1 by id
+
+        ExcitedButton.setOnClickListener(v -> {
+            Count5++;
+            Counter5.setText(String.valueOf(Count5));
+        });
+
+        Button DisappointedButton = findViewById(R.id.button6); //find the button by id
+        Counter6 = findViewById(R.id.counter6); //find the counter1 by id
+
+        DisappointedButton.setOnClickListener(v -> {
+            Count6++;
+            Counter6.setText(String.valueOf(Count6));
         });
     }
 
