@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/counter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/counterPlaceholder"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/counter2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/happy"
+        app:layout_constraintBottom_toTopOf="@id/counter4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/counter1" />
+
+    <TextView
+        android:id="@+id/counter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterPlaceholder"
+        app:layout_constraintBottom_toTopOf="@id/button2"
+        app:layout_constraintLeft_toRightOf="@id/counter1"
+        app:layout_constraintRight_toLeftOf="@id/counter3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="81dp"
+        android:layout_height="53dp"
+        android:text="@string/sad"
+        app:layout_constraintBottom_toTopOf="@id/counter5"
+        app:layout_constraintLeft_toRightOf="@id/button"
+        app:layout_constraintRight_toLeftOf="@id/button3"
+        app:layout_constraintTop_toBottomOf="@id/counter2" />
+
+    <TextView
+        android:id="@+id/counter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterPlaceholder"
+        app:layout_constraintBottom_toTopOf="@id/button3"
+        app:layout_constraintLeft_toRightOf="@id/counter2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grateful"
+        app:layout_constraintBottom_toTopOf="@id/counter6"
+        app:layout_constraintLeft_toRightOf="@id/button2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/counter3" />
+
+    <TextView
+        android:id="@+id/counter4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterPlaceholder"
+        app:layout_constraintBottom_toTopOf="@id/button4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/counter5"
+        app:layout_constraintTop_toBottomOf="@id/button"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/angry"
+        app:layout_constraintTop_toBottomOf="@id/counter4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button5"
+        />
+
+    <TextView
+        android:id="@+id/counter5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterPlaceholder"
+        app:layout_constraintBottom_toTopOf="@id/button5"
+        app:layout_constraintLeft_toRightOf="@id/counter4"
+        app:layout_constraintRight_toLeftOf="@id/counter6"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/excited"
+        app:layout_constraintTop_toBottomOf="@id/counter5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button4"
+        app:layout_constraintRight_toLeftOf="@id/button6" />
+
+    <TextView
+        android:id="@+id/counter6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counterPlaceholder"
+        app:layout_constraintBottom_toTopOf="@id/button6"
+        app:layout_constraintLeft_toRightOf="@id/counter5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3"
+
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disappointed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button3"
+        app:layout_constraintVertical_bias="0.721" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

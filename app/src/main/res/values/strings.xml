@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Emoticon Counter</string>
+    <string name="happy">Happy</string>
+    <string name="sad">Sad</string>
+    <string name="grateful">Grateful</string>
+    <string name="angry">Angry</string>
+    <string name="excited">Excited</string>
+    <string name="disappointed">Disappointed</string>
+    <string name="counterPlaceholder">hello</string>
+
+
+
+
+</resources>
