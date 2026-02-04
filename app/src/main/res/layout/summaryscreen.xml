@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/summary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryScreen">
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/backbutton"
+
+        />
+
+    <TextView
+        android:id="@+id/happytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/happy"
+        />
+
+    <ListView
+        android:id="@+id/happylist"
+        android:layout_width="109dp"
+        android:layout_height="119dp" />
+
+    <TextView
+        android:id="@+id/sadtext"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:text="@string/sad"
+
+        />
+
+    <ListView
+        android:id="@+id/sadlist"
+        android:layout_width="127dp"
+        android:layout_height="131dp" />
+
+    <TextView
+        android:id="@+id/gratefultext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grateful"
+
+        />
+
+    <ListView
+        android:id="@+id/gratefullist"
+        android:layout_width="140dp"
+        android:layout_height="101dp" />
+
+    <TextView
+        android:id="@+id/angrytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/angry"
+
+        />
+
+    <ListView
+        android:id="@+id/angrylist"
+        android:layout_width="97dp"
+        android:layout_height="33dp" />
+
+    <TextView
+        android:id="@+id/excitedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/excited"
+
+        />
+
+    <ListView
+        android:id="@+id/excitedlist"
+        android:layout_width="117dp"
+        android:layout_height="68dp" />
+
+    <TextView
+        android:id="@+id/disappointedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disappointed"
+
+        />
+
+    <ListView
+        android:id="@+id/disappointedlist"
+        android:layout_width="166dp"
+        android:layout_height="73dp" />
+
+</LinearLayout>

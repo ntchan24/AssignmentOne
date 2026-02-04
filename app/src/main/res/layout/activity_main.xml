@@ -109,10 +109,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/excited"
-        app:layout_constraintTop_toBottomOf="@id/counter5"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/summaryButton"
         app:layout_constraintLeft_toRightOf="@id/button4"
-        app:layout_constraintRight_toLeftOf="@id/button6" />
+        app:layout_constraintRight_toLeftOf="@id/button6"
+        app:layout_constraintTop_toBottomOf="@id/counter5" />
 
     <TextView
         android:id="@+id/counter6"
@@ -135,6 +135,18 @@
         app:layout_constraintLeft_toRightOf="@id/button5"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/button3"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <Button
+        android:id="@+id/summaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button5"
         app:layout_constraintVertical_bias="0.721" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
