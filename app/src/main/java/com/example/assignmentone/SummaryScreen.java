@@ -128,10 +128,7 @@ public class SummaryScreen extends AppCompatActivity {
         //back button
         Button backButton = findViewById(R.id.backbutton);
         backButton.setOnClickListener(v->{
-            Intent intent = new Intent(SummaryScreen.this, MainActivity.class);
-            //go back to the main screen
-
-            startActivity(intent);
+            finish();
         });
     }
 }

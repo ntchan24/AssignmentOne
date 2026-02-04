@@ -56,11 +56,35 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        // Restore saved state if available
+        if (savedInstanceState != null) {
+            Count1 = savedInstanceState.getInt("Count1", 0);
+            Count2 = savedInstanceState.getInt("Count2", 0);
+            Count3 = savedInstanceState.getInt("Count3", 0);
+            Count4 = savedInstanceState.getInt("Count4", 0);
+            Count5 = savedInstanceState.getInt("Count5", 0);
+            Count6 = savedInstanceState.getInt("Count6", 0);
+            TotalCount = savedInstanceState.getInt("TotalCount", 0);
+            timestamps1 = savedInstanceState.getStringArrayList("timestamps1");
+            timestamps2 = savedInstanceState.getStringArrayList("timestamps2");
+            timestamps3 = savedInstanceState.getStringArrayList("timestamps3");
+            timestamps4 = savedInstanceState.getStringArrayList("timestamps4");
+            timestamps5 = savedInstanceState.getStringArrayList("timestamps5");
+            timestamps6 = savedInstanceState.getStringArrayList("timestamps6");
+            if (timestamps1 == null) timestamps1 = new ArrayList<>();
+            if (timestamps2 == null) timestamps2 = new ArrayList<>();
+            if (timestamps3 == null) timestamps3 = new ArrayList<>();
+            if (timestamps4 == null) timestamps4 = new ArrayList<>();
+            if (timestamps5 == null) timestamps5 = new ArrayList<>();
+            if (timestamps6 == null) timestamps6 = new ArrayList<>();
+        }
+
         //when each button is pressed, we want to show the incremented counter
         //add the timestamp into an arraylist that can be passed to the summary screen
 
         Button HappyButton = findViewById(R.id.button); //find the button by id
         Counter1 = findViewById(R.id.counter1); //find the counter1 by id
+        if (Count1 > 0) Counter1.setText(String.valueOf(Count1));
 
         HappyButton.setOnClickListener(v -> {
             Count1++; //increment the count
@@ -73,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button SadButton = findViewById(R.id.button2); //find the button by id
         Counter2 = findViewById(R.id.counter2); //find the counter1 by id
+        if (Count2 > 0) Counter2.setText(String.valueOf(Count2));
 
         SadButton.setOnClickListener(v -> {
             Count2++;
@@ -85,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button GratefulButton = findViewById(R.id.button3); //find the button by id
         Counter3 = findViewById(R.id.counter3); //find the counter1 by id
+        if (Count3 > 0) Counter3.setText(String.valueOf(Count3));
 
         GratefulButton.setOnClickListener(v -> {
             Count3++;
@@ -97,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button AngryButton = findViewById(R.id.button4); //find the button by id
         Counter4 = findViewById(R.id.counter4); //find the counter1 by id
+        if (Count4 > 0) Counter4.setText(String.valueOf(Count4));
 
         AngryButton.setOnClickListener(v -> {
             Count4++;
@@ -109,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button ExcitedButton = findViewById(R.id.button5); //find the button by id
         Counter5 = findViewById(R.id.counter5); //find the counter1 by id
+        if (Count5 > 0) Counter5.setText(String.valueOf(Count5));
 
         ExcitedButton.setOnClickListener(v -> {
             Count5++;
@@ -121,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button DisappointedButton = findViewById(R.id.button6); //find the button by id
         Counter6 = findViewById(R.id.counter6); //find the counter1 by id
+        if (Count6 > 0) Counter6.setText(String.valueOf(Count6));
 
         DisappointedButton.setOnClickListener(v -> {
             Count6++;
@@ -160,6 +189,24 @@ public class MainActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("Count1", Count1);
+        outState.putInt("Count2", Count2);
+        outState.putInt("Count3", Count3);
+        outState.putInt("Count4", Count4);
+        outState.putInt("Count5", Count5);
+        outState.putInt("Count6", Count6);
+        outState.putInt("TotalCount", TotalCount);
+        outState.putStringArrayList("timestamps1", new ArrayList<>(timestamps1));
+        outState.putStringArrayList("timestamps2", new ArrayList<>(timestamps2));
+        outState.putStringArrayList("timestamps3", new ArrayList<>(timestamps3));
+        outState.putStringArrayList("timestamps4", new ArrayList<>(timestamps4));
+        outState.putStringArrayList("timestamps5", new ArrayList<>(timestamps5));
+        outState.putStringArrayList("timestamps6", new ArrayList<>(timestamps6));
     }
 
 }
