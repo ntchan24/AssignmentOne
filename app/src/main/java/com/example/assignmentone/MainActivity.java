@@ -191,10 +191,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+    //this part handles the session persistence between screens
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+        //stores these values in memory to preserve the state
         super.onSaveInstanceState(outState);
-        outState.putInt("Count1", Count1);
+        outState.putInt("Count1", Count1); //uses a key val pair
         outState.putInt("Count2", Count2);
         outState.putInt("Count3", Count3);
         outState.putInt("Count4", Count4);
@@ -208,5 +211,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putStringArrayList("timestamps5", new ArrayList<>(timestamps5));
         outState.putStringArrayList("timestamps6", new ArrayList<>(timestamps6));
     }
+
+
 
 }
