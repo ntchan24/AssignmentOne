@@ -7,146 +7,161 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/counter1"
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:id="@+id/emotionGrid"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
-        android:text="@string/counterPlaceholder"
-        app:layout_constraintBottom_toTopOf="@id/button"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/counter2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/happy"
-        app:layout_constraintBottom_toTopOf="@id/counter4"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/button2"
-        app:layout_constraintTop_toBottomOf="@id/counter1" />
-
-    <TextView
-        android:id="@+id/counter2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/counterPlaceholder"
-        app:layout_constraintBottom_toTopOf="@id/button2"
-        app:layout_constraintLeft_toRightOf="@id/counter1"
-        app:layout_constraintRight_toLeftOf="@id/counter3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="81dp"
-        android:layout_height="53dp"
-        android:text="@string/sad"
-        app:layout_constraintBottom_toTopOf="@id/counter5"
-        app:layout_constraintLeft_toRightOf="@id/button"
-        app:layout_constraintRight_toLeftOf="@id/button3"
-        app:layout_constraintTop_toBottomOf="@id/counter2" />
-
-    <TextView
-        android:id="@+id/counter3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/counterPlaceholder"
-        app:layout_constraintBottom_toTopOf="@id/button3"
-        app:layout_constraintLeft_toRightOf="@id/counter2"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/grateful"
-        app:layout_constraintBottom_toTopOf="@id/counter6"
-        app:layout_constraintLeft_toRightOf="@id/button2"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/counter3" />
-
-    <TextView
-        android:id="@+id/counter4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/counterPlaceholder"
-        app:layout_constraintBottom_toTopOf="@id/button4"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/counter5"
-        app:layout_constraintTop_toBottomOf="@id/button"
-
-        />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/angry"
-        app:layout_constraintTop_toBottomOf="@id/counter4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/button5"
-        />
-
-    <TextView
-        android:id="@+id/counter5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/counterPlaceholder"
-        app:layout_constraintBottom_toTopOf="@id/button5"
-        app:layout_constraintLeft_toRightOf="@id/counter4"
-        app:layout_constraintRight_toLeftOf="@id/counter6"
-        app:layout_constraintTop_toBottomOf="@id/button2"
-
-        />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/excited"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@id/summaryButton"
-        app:layout_constraintLeft_toRightOf="@id/button4"
-        app:layout_constraintRight_toLeftOf="@id/button6"
-        app:layout_constraintTop_toBottomOf="@id/counter5" />
-
-    <TextView
-        android:id="@+id/counter6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/counterPlaceholder"
-        app:layout_constraintBottom_toTopOf="@id/button6"
-        app:layout_constraintLeft_toRightOf="@id/counter5"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
 
-        />
+        <!-- Row 1, Column 1: Happy -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/disappointed"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/button5"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button3"
-        app:layout_constraintVertical_bias="0.721" />
+            <TextView
+                android:id="@+id/counter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counterPlaceholder" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/happy" />
+        </LinearLayout>
+
+        <!-- Row 1, Column 2: Sad -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/counter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counterPlaceholder" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sad" />
+        </LinearLayout>
+
+        <!-- Row 1, Column 3: Grateful -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/counter3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counterPlaceholder" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grateful" />
+        </LinearLayout>
+
+        <!-- Row 2, Column 1: Angry -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/counter4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counterPlaceholder" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/angry" />
+        </LinearLayout>
+
+        <!-- Row 2, Column 2: Excited -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/counter5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counterPlaceholder" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/excited" />
+        </LinearLayout>
+
+        <!-- Row 2, Column 3: Disappointed -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/counter6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counterPlaceholder" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/disappointed" />
+        </LinearLayout>
+
+    </GridLayout>
 
     <Button
         android:id="@+id/summaryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="@string/summary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button5"
-        app:layout_constraintVertical_bias="0.721" />
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

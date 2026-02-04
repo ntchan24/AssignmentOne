@@ -31,7 +31,7 @@ public class SummaryScreen extends AppCompatActivity {
 
         assert timestamps1 != null;
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(
-                this, android.R.layout.simple_list_item_1, timestamps1);
+                this, android.R.layout.simple_list_item_1, timestamps1); //1timestamp per line
         listView1.setAdapter(adapter1);
 
 
@@ -96,7 +96,7 @@ public class SummaryScreen extends AppCompatActivity {
         int TotalCount = getIntent().getIntExtra("TotalPresses",0);
 
         //happy text
-        String count1freq = ("Happy " + count1+"/"+ TotalCount);
+        String count1freq = ("Happy " + count1+"/"+ TotalCount); //count and frequency displayed on textview
         TextView HappyText = findViewById(R.id.happytext);
         HappyText.setText(count1freq);
 

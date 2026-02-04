@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private int Count5 = 0;
     private int Count6 = 0;
     private int TotalCount = 0;
-
+    //arraylists for the timestamps
     List<String> timestamps1 = new ArrayList<>();
     List<String> timestamps2 = new ArrayList<>();
     List<String> timestamps3 = new ArrayList<>();
@@ -63,11 +63,11 @@ public class MainActivity extends AppCompatActivity {
         Counter1 = findViewById(R.id.counter1); //find the counter1 by id
 
         HappyButton.setOnClickListener(v -> {
-            Count1++;
+            Count1++; //increment the count
             Counter1.setText(String.valueOf(Count1));
             String timestamp1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
                     .format(new Date());
-            timestamps1.add(timestamp1);
+            timestamps1.add(timestamp1); //get timestamp and add it to the list for this button
             TotalCount++;
         });
 
